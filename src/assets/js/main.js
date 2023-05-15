@@ -1,8 +1,8 @@
 const btnSiguiente = document.getElementById('siguiente');
-const btnAtras = document.getElementById('atras');
+const btnAnterior = document.getElementById('anterior');
 let index = 1;
 
-function mostrarTarjeta(event) {
+function mostrarTarjetaSiguiente(event) {
     event.preventDefault();
     const tarjetaActual = document.getElementById('card' + index);
     tarjetaActual.classList.add('d-none');
@@ -15,5 +15,18 @@ function mostrarTarjeta(event) {
     nuevaTarjeta.classList.add('d-block');
 }
 
-btnSiguiente.addEventListener('click', mostrarTarjeta);
-btnAtras.addEventListener('click', mostrarTarjeta);
+function mostrarTarjetaAnterior(event) {
+    event.preventDefault();
+    const tarjetaActual = document.getElementById('card' + index);
+    tarjetaActual.classList.add('d-none');
+
+    index--;
+    if (index < 1) index = 3;
+
+    const nuevaTarjeta = document.getElementById('card' + index);
+    nuevaTarjeta.classList.remove('d-none');
+    nuevaTarjeta.classList.add('d-block');
+}
+
+btnSiguiente.addEventListener('click', mostrarTarjetaSiguiente);
+btnAnterior.addEventListener('click', mostrarTarjetaAnterior);
