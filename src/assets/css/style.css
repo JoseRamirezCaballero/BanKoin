@@ -1,3 +1,7 @@
+body {
+    display: none;
+}
+
 .arrow-button {
     position: absolute;
     top: 50%;

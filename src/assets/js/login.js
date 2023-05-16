@@ -6,9 +6,10 @@ submit.addEventListener('submit', function (event) {
     fetch('/api/users.json')
         .then(response => response.json())
         .then(data => {
-            const user = data.find(user => user.username === username && user.password === password);
+            const user = data.find(user => (user.username === username && user.password === password) || (user.email === username && user.password === password));
 
             if (user) {
+                sessionStorage.setItem('user', JSON.stringify(user));
                 window.location.href = 'index.html';
               } else {
                 alert('Credenciales incorrectas');
