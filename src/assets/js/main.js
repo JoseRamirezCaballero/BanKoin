@@ -213,7 +213,7 @@ function retirar(event) {
   } else {
     const cardBalance = data.balance - cantidad;
     data.balance = cardBalance
-    userData.movimientos.push({ type: 'retiro', amount: cantidad, asunto: asunto })
+    userData.movimientos.push({ type: 'retiro', amount: cantidad, asunto: asunto, tarjeta: data.number})
     alert(`Ha retirado $${cantidad}.\nSu saldo actualizado es de: $${cardBalance}`)
   }
 }
@@ -260,7 +260,7 @@ function transferir(event) {
           const dataTarjeta = userTarjeta.cards.find(card => card.number === tarjeta);
           dataTarjeta.balance = dataTarjeta.balance + cantidad
           myData.balance = myData.balance - cantidad
-          userData.movimientos.push({ type: 'transferencia', amount: cantidad, asunto: asunto })
+          userData.movimientos.push({ type: 'transferencia', amount: cantidad, asunto: asunto, tarjeta: myData.number })
           alert(`Ha depositado $${cantidad} a ${userTarjeta.username}.\nSu saldo actualizado es de: $${myData.balance}`)
         }
       })
@@ -300,7 +300,7 @@ function depositar(event) {
     console.log(cantidad)
     const cardBalance = data.balance + cantidad;
     data.balance = cardBalance
-    userData.movimientos.push({ type: 'deposito', amount: cantidad, asunto: asunto })
+    userData.movimientos.push({ type: 'deposito', amount: cantidad, asunto: asunto, tarjeta: data.number})
     alert(`Ha depositado $${cantidad}.\nSu saldo actualizado es de: $${cardBalance}`)
   }
 }
@@ -308,7 +308,8 @@ function depositar(event) {
 function mostrarHistorial() {
   let mensaje = '';
   userData.movimientos.forEach(function (movimiento) {
-    mensaje += 'Tipo: ' + movimiento.type + '\n' +
+    mensaje += 'Tarjeta: ' + movimiento.tarjeta + '\n' + 
+      'Tipo: ' + movimiento.type + '\n' +
       'Cantidad: ' + movimiento.amount + '\n' +
       'Asunto: ' + movimiento.asunto + '\n\n';
   });
