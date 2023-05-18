@@ -1,32 +1,142 @@
 body {
-    display: none;
+	display: none;
+}
+
+main {
+	background: url('../img/bg-main.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+#extraInfo {
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	right: 0;
+	background-color: #ffffff;
+	padding: 10px;
+	z-index: 2;
+}
+
+#cardContainer {
+	top: 100px;
+}
+
+.vh {
+	height: calc(100vh - 56px);
+}
+
+.position-extraInfo {
+	position: relative;
+	top: 210px;
+}
+
+.small-list .nav-link {
+	padding: 0.25rem 0.5rem;
+	line-height: 1.5;
+}
+
+.max-h-200 {
+	max-height: 200px;
+}
+
+.overflow-card .card-content {
+	max-height: 100px;
+	overflow: auto;
 }
 
 .arrow-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    z-index: 1;
+	position: absolute;
+	top: 50%;
+	width: 40px;
+	height: 40px;
+	background-color: #ffffff;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	z-index: 1;
 }
 
 .arrow-button i {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 .arrow-button.arrow-left {
-    left: 20px;
+	left: 20px;
+	top: 250px;
 }
 
 .arrow-button.arrow-right {
-    right: 20px;
+	right: 20px;
+	top: 250px;
+}
+
+
+/* tarjeta */
+.tarjeta {
+	width: 100%;
+	max-width: 550px;
+	color: #fff;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.tarjeta>div {
+	padding: 30px;
+	border-radius: 15px;
+	min-height: 315px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.tarjeta .delantera {
+	width: 100%;
+	background: url('../img/bg-tarjeta-01.jpg');
+	background-size: cover;
+}
+
+.delantera .logo-marca {
+	text-align: right;
+	min-height: 50px;
+}
+
+.delantera .logo-marca img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 80px;
+}
+
+.delantera .chip {
+	width: 100%;
+	max-width: 50px;
+	margin-bottom: 20px;
+}
+
+.delantera .grupo .label {
+	font-size: 16px;
+	color: #7d8994;
+	margin-bottom: 5px;
+}
+
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion {
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.delantera .flexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
 }

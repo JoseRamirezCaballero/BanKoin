@@ -14,7 +14,8 @@
 
 <body>
 
-  <header class="bg-dark text-light position-fixed w-100 shadow-sm mb-5 rounded-bottom">
+  <header
+    class="bg-transparent border-bottom border-left border-right border-light text-light position-fixed w-100 shadow-sm mb-5 rounded-bottom z-3">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">BanKoin</a>
@@ -24,13 +25,10 @@
               <a class="nav-link text-light" href="#">Inicio</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link text-light" href="#" onclick="mostrarHistorial()">Historial</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link text-light" href="#" id="logout">Cerrar sesión</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Contacto</a>
             </li>
           </ul>
         </div>
@@ -38,38 +36,29 @@
     </div>
   </header>
 
-  <main class="bg-primary bg-gradient vh-100 d-flex align-items-center">
-    <a href="#" class="arrow-button arrow-left" id="anterior">
-      <i class="fas fa-arrow-left"></i>
-    </a>
-    
-    <div id="cardContainer" class="text-center d-flex justify-content-center mx-auto">
+  <main>
+    <section class="vh d-flex align-items-center">
+      <a href="#" class="arrow-button arrow-left position-fixed" id="anterior">
+        <i class="fas fa-arrow-left"></i>
+      </a>
 
-    </div>
-    <!-- <div class="card text-center d-flex justify-content-center mx-auto" id="card1">
-      <div class="card-header">
-        Tarjeta de Banco
+      <div id="cardContainer" class="w-100 d-flex justify-content-center position-fixed">
+        <!-- TARJETAS -->
       </div>
-      <div class="card-body">
-        <h5 class="card-title">Banco XYZ</h5>
-        <p class="card-text">Número de tarjeta: **** **** **** 1234</p>
-        <p class="card-text">Fecha de vencimiento: 12/2025</p>
-        <p class="card-text">Titular de la tarjeta: Juan Pérez</p>
-        <p class="card-text">Saldo: $1000</p>
-        <a href="#" class="btn btn-primary">Acciones</a>
-      </div>
-      <div class="card-footer text-muted">
-        Banco XYZ - Tarjeta de Crédito
-      </div>
-    </div> -->
 
-    <a href="#" class="arrow-button arrow-right" id="siguiente">
-      <i class="fas fa-arrow-right"></i>
-    </a>
+      <div id="extraInfo" class="card w-50 text-center mb-3 position-extraInfo max-h-200">
+        <!-- INFO-TABS -->
+      </div>
+
+      <a href="#" class="arrow-button arrow-right position-fixed" id="siguiente">
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </section>
+
   </main>
 
   <footer class="bg-dark text-light py-3">
-    <div class="container">
+    <div class="container text-center">
       <p class="mb-0">&copy; 2023 BanKoin. Todos los derechos reservados.</p>
     </div>
   </footer>

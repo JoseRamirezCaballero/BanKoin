@@ -1,340 +1,45 @@
 [
   {
-    "username": "Juan Pérez",
-    "password": "Zbk7qn8fRb",
-    "email": "juan@example.com",
+    "username": "123",
+    "password": "123",
+    "email": "123@hotmail.com",
+    "movimientos": [],
     "cards": [
       {
         "type": "Crédito",
-        "bank": "Banco XYZ",
-        "number": "1234 5678 9012 3456",
-        "expiration": "12/2025",
-        "holder": "Juan Pérez",
-        "balance": 12222
-      },
-      {
-        "type": "Débito",
-        "bank": "Banco ABC",
-        "number": "9876 5432 1098 7654",
-        "expiration": "N/A",
-        "holder": "Juan Pérez",
-        "balance": 28395
-      }
-    ]
-  },
-  {
-    "username": "Ignacio Cabrera",
-    "password": "4DcnTY8t3g",
-    "email": "ignacio@example.com",
-    "cards": [
-      {
-        "type": "Crédito",
-        "bank": "Banco XYZ",
-        "number": "5678 9012 3456 7890",
-        "expiration": "10/2024",
-        "holder": "Ignacio Cabrera",
-        "balance": 44524
-      }
-    ]
-  },
-  {
-    "username": "María Rodríguez",
-    "password": "v6AmwWqrKx",
-    "email": "maria@example.com",
-    "cards": [
-      {
-        "type": "Débito",
-        "bank": "Banco DEF",
-        "number": "4321 0987 6543 2109",
-        "expiration": "N/A",
-        "holder": "María Rodríguez",
-        "balance": 20137
-      },
-      {
-        "type": "Crédito",
-        "bank": "Banco XYZ",
-        "number": "9012 3456 7890 1234",
-        "expiration": "05/2023",
-        "holder": "María Rodríguez",
-        "balance": 26987
-      }
-    ]
-  },
-  {
-    "username": "Pedro Gómez",
-    "password": "7mG3DfH85v",
-    "email": "pedro@example.com",
-    "cards": [
-      {
-        "type": "Débito",
-        "bank": "Banco GHI",
-        "number": "7890 1234 5678 9012",
-        "expiration": "N/A",
-        "holder": "Pedro Gómez",
-        "balance": 24167
-      },
-      {
-        "type": "Crédito",
-        "bank": "Banco JKL",
-        "number": "6543 2109 8765 4321",
-        "expiration": "08/2023",
-        "holder": "Pedro Gómez",
-        "balance": 19945
-      }
-    ]
-  },
-  {
-    "username": "Ana López",
-    "password": "9b1jmk30p2",
-    "email": "ana@example.com",
-    "cards": [
-      {
-        "type": "Crédito",
-        "bank": "Banco ABC",
-        "number": "5678 9012 3456 7890",
-        "expiration": "09/2023",
-        "holder": "Ana López",
-        "balance": 39685
-      }
-    ]
-  },
-  {
-    "username": "Marcela Torres",
-    "password": "5Ke8DMvTq7",
-    "email": "marcela@example.com",
-    "cards": [
-      {
-        "type": "Débito",
-        "bank": "Banco XYZ",
-        "number": "9876 5432 1098 7654",
-        "expiration": "06/2024",
-        "holder": "Marcela Torres",
-        "balance": 28574
-      }
-    ]
-  },
-  {
-    "username": "Carlos Ramírez",
-    "password": "Y1c4sgaK9f",
-    "email": "carlos@example.com",
-    "cards": [
-      {
-        "type": "Crédito",
-        "bank": "Banco XYZ",
-        "number": "1234 5678 9012 3456",
-        "expiration": "12/2025",
-        "holder": "Carlos Ramírez",
-        "balance": 15723
-      },
-      {
-        "type": "Débito",
-        "bank": "Banco ABC",
-        "number": "9876 5432 1098 7654",
-        "expiration": "N/A",
-        "holder": "Carlos Ramírez",
-        "balance": 33802
-      },
-      {
-        "type": "Crédito",
-        "bank": "Banco DEF",
-        "number": "5432 1098 7654 3210",
-        "expiration": "06/2024",
-        "holder": "Carlos Ramírez",
-        "balance": 49591
-      }
-    ]
-  },
-  {
-    "username": "Laura Martínez",
-    "password": "1Vy4F89h7K",
-    "email": "laura@example.com",
-    "cards": [
-      {
-        "type": "Crédito",
-        "bank": "Banco ABC",
-        "number": "1234 5678 9012 3456",
-        "expiration": "12/2025",
-        "holder": "Laura Martínez",
-        "balance": 21570
-      },
-      {
-        "type": "Débito",
-        "bank": "Banco XYZ",
-        "number": "9876 5432 1098 7654",
-        "expiration": "N/A",
-        "holder": "Laura Martínez",
-        "balance": 15288
-      },
-      {
-        "type": "Crédito",
-        "bank": "Banco DEF",
-        "number": "5432 1098 7654 3210",
-        "expiration": "06/2024",
-        "holder": "Laura Martínez",
-        "balance": 40646
-      },
-      {
-        "type": "Débito",
-        "bank": "Banco GHI",
-        "number": "9012 3456 7890 1234",
-        "expiration": "N/A",
-        "holder": "Laura Martínez",
-        "balance": 33852
-      }
-    ]
-  },
-  {
-    "username": "Roberto Sánchez",
-    "password": "T2e7m4JxNk",
-    "email": "roberto@example.com",
-    "cards": [
-      {
-        "type": "Crédito",
-        "bank": "Banco XYZ",
-        "number": "1234 5678 9012 3456",
-        "expiration": "12/2025",
-        "holder": "Roberto Sánchez",
-        "balance": 28935
-      },
-      {
-        "type": "Débito",
-        "bank": "Banco ABC",
-        "number": "9876 5432 1098 7654",
-        "expiration": "N/A",
-        "holder": "Roberto Sánchez",
-        "balance": 42650
-      }
-    ]
-  },
-  {
-    "username": "Ana García",
-    "password": "6cMg8ja2qL",
-    "email": "ana@example.com",
-    "cards": [
-      {
-        "type": "Débito",
-        "bank": "Banco ABC",
-        "number": "2345 6789 0123 4567",
-        "expiration": "N/A",
-        "holder": "Ana García",
-        "balance": 25443
-      },
-      {
-        "type": "Crédito",
-        "bank": "Banco XYZ",
-        "number": "8765 4321 0987 6543",
-        "expiration": "07/2023",
-        "holder": "Ana García",
-        "balance": 39841
-      },
-      {
-        "type": "Débito",
-        "bank": "Banco DEF",
-        "number": "5432 1098 7654 3210",
-        "expiration": "N/A",
-        "holder": "Ana García",
-        "balance": 10305
-      }
-    ]
-  },
-  {
-    "username": "Pedro Torres",
-    "password": "Sb9G5L3XfY",
-    "email": "pedro@example.com",
-    "cards": [
-      {
-        "type": "Crédito",
-        "bank": "Banco XYZ",
-        "number": "5678 9012 3456 7890",
-        "expiration": "09/2024",
-        "holder": "Pedro Torres",
-        "balance": 35290
-      },
-      {
-        "type": "Débito",
-        "bank": "Banco DEF",
-        "number": "4321 0987 6543 2109",
-        "expiration": "N/A",
-        "holder": "Pedro Torres",
-        "balance": 25867
-      },
-      {
-        "type": "Crédito",
-        "bank": "Banco GHI",
-        "number": "9012 3456 7890 1234",
-        "expiration": "05/2023",
-        "holder": "Pedro Torres",
-        "balance": 48293
-      }
-    ]
-  },
-  {
-    "username": "María López",
-    "password": "zS6LqFdQY2",
-    "email": "maria@example.com",
-    "cards": [
-      {
-        "type": "Crédito",
-        "bank": "Banco XYZ",
-        "number": "1234 5678 9012 3456",
-        "expiration": "12/2025",
-        "holder": "María López",
-        "balance": 34675
-      },
-      {
-        "type": "Débito",
-        "bank": "Banco ABC",
-        "number": "9876 5432 1098 7654",
-        "expiration": "N/A",
-        "holder": "María López",
-        "balance": 31298
-      }
-    ]
-  },
-  {
-    "username": "Gabriela Méndez",
-    "password": "j8bT5mM7Hx",
-    "email": "gabriela@example.com",
-    "cards": [
-      {
-        "type": "Crédito",
-        "bank": "Banco ABC",
-        "number": "1234 5678 9012 3456",
+        "number": "1234 1234 1234 1234",
         "expiration": "12/2024",
-        "holder": "Gabriela Méndez",
+        "holder": "Bernardo Martinez",
         "balance": 28651
       },
       {
-        "type": "Crédito",
-        "bank": "Banco XYZ",
+        "type": "Debito",
         "number": "9876 5432 1098 7654",
         "expiration": "09/2023",
-        "holder": "Gabriela Méndez",
+        "holder": "Bernardo Martinez",
         "balance": 43175
+      }
+    ]
+  },
+  {
+    "username": "Jose Manuel",
+    "password": "1234",
+    "email": "jose@hotmail.com",
+    "movimientos": [],
+    "cards": [
+      {
+        "type": "Debito",
+        "number": "1234 1234 1234 0000",
+        "expiration": "12/2024",
+        "holder": "Jose Manuel",
+        "balance": 28651
       },
       {
-        "type": "Débito",
-        "bank": "Banco GHI",
-        "number": "5678 9012 3456 7890",
-        "expiration": "N/A",
-        "holder": "Gabriela Méndez",
-        "balance": 37244
-      },
-      {
-        "type": "Crédito",
-        "bank": "Banco DEF",
-        "number": "4321 0987 6543 2109",
-        "expiration": "03/2024",
-        "holder": "Gabriela Méndez",
-        "balance": 48763
-      },
-      {
-        "type": "Débito",
-        "bank": "Banco JKL",
-        "number": "9012 3456 7890 1234",
-        "expiration": "N/A",
-        "holder": "Gabriela Méndez",
-        "balance": 38542
+        "type": "Debito",
+        "number": "9876 5432 1098 0000",
+        "expiration": "09/2023",
+        "holder": "Jose Manuel",
+        "balance": 43175
       }
     ]
   }
