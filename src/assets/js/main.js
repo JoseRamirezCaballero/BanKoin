@@ -40,14 +40,14 @@ userData.cards.forEach((card, index) => {
   logoBrand.classList.add('logo-marca');
   logoBrand.id = 'logo-marca';
   const logoImg = document.createElement('img');
-  logoImg.src = './assets/img/mastercard.png';
+  logoImg.src = './src/assets/img/mastercard.png';
   logoImg.alt = 'bank';
   logoBrand.appendChild(logoImg);
   cardFront.appendChild(logoBrand);
 
   const chipImg = document.createElement('img');
   chipImg.classList.add('chip');
-  chipImg.src = './assets/img/chip-tarjeta.png';
+  chipImg.src = './src/assets/img/chip-tarjeta.png';
   chipImg.alt = 'chip';
   cardFront.appendChild(chipImg);
 
