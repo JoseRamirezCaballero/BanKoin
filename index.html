@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BanKoin</title>
+  <link rel="stylesheet" href="./src/assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+  <header
+    class="bg-transparent border-bottom border-left border-right border-light text-light position-fixed w-100 shadow-sm mb-5 rounded-bottom z-3">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">BanKoin</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-lg-flex">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#" onclick="mostrarHistorial()">Historial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#" id="logout">Cerrar sesión</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="vh d-flex align-items-center">
+      <a href="#" class="arrow-button arrow-left position-fixed" id="anterior">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+
+      <div id="cardContainer" class="w-100 d-flex justify-content-center position-fixed">
+        <!-- TARJETAS -->
+      </div>
+
+      <div id="extraInfo" class="card w-50 text-center mb-3 position-extraInfo max-h-200">
+        <!-- INFO-TABS -->
+      </div>
+
+      <a href="#" class="arrow-button arrow-right position-fixed" id="siguiente">
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-light py-3">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2023 BanKoin. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+  <script src="./src/assets/js/main.js"></script>
+</body>
+
+</html>
